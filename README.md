@@ -6,7 +6,7 @@ To check the functionality of App just run Main() in MainSQL.Class after compila
 
 -------------------------
 Answers for the problems:
--------------------------
+
 *******Problem 1*********
 SELECT * FROM gorod WHERE region_id = #{region_id} ORDER BY naselenie DESC //region_id =1
 
@@ -27,9 +27,9 @@ select * from gorod WHERE city_name LIKE 'К%'
 
 *******problem 7*********
 SELECT r.id, r.region_name, g.cnt FROM region r LEFT JOIN (SELECT COUNT(region_id) as cnt, region_id FROM gorod GROUP BY region_id) g ON r.id = g.region_id 
+
 ===========================================================================
-
-
+-------------------------
 
 
 
